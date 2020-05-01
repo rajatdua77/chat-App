@@ -2,7 +2,7 @@ const form = document.getElementById('chat-form');
 const messageBox = document.getElementById('messageBox');
 const chatBox = document.getElementById('chat-box')
 
-const socket = io('localhost:8080');
+const socket = io('https://rajat-chatapp.herokuapp.com/');
 
   socket.on('message', (msg) => {
     const liTag = document.createElement('li');
